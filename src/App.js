@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Restaurant from './component/Basics/Restaurant';
 
-function App() {
+const App = () => { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Restaurant/>
+  )
 }
+export default App
 
-export default App;
+
+
+// JSX Rules
+// it always return a single element;
+// use Div or React Fragment to wrap all your JSX Code || React.Fragment or <> && </>
+// className in pace of class -> className
+// Need to close all non-closing tags in jsx  CLOSE ALL EVEN IMG <IMG/>
+// use camelCase for attributes || first word nonCapital but second word first alphabest CAPITAL -> onClick
